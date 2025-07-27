@@ -1,0 +1,49 @@
+name: step_out
+description: "A new Flutter project."
+publish_to: 'none' # This prevents publishing to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  firebase_app_check: ^0.2.0+4
+  http: ^1.2.1
+  intl: ^0.18.1
+  flutter:
+    sdk: flutter
+  mailer: ^6.0.1
+  firebase_core: ^2.30.0
+  firebase_auth: ^4.17.8
+  cloud_firestore: ^4.17.5
+  image_picker: ^1.1.0
+  firebase_storage: ^11.7.5
+  cupertino_icons: ^1.0.8
+  animated_text_kit: ^4.2.2
+  google_sign_in: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+
+  fonts:
+    - family: Dosis
+      fonts:
+        - asset: assets/fonts/Dosis-Bold.ttf
+        - asset: assets/fonts/Dosis-SemiBold.ttf
+        - asset: assets/fonts/Dosis-Medium.ttf
+        - asset: assets/fonts/Dosis-Regular.ttf
+        - asset: assets/fonts/Dosis-Light.ttf
+        - asset: assets/fonts/Dosis-ExtraBold.ttf
+        - asset: assets/fonts/Dosis-ExtraLight.ttf
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/inter.ttf
