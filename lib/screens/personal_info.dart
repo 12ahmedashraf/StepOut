@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'profile_picture_page.dart';
 
 class personal_info_screen extends StatefulWidget {
@@ -218,10 +217,7 @@ class _personal_info_screenState extends State<personal_info_screen> {
                 ),
 
               ),
-
               const SizedBox(height: 16),
-
-
               DropdownButtonFormField<String>(
                 value: _selectedCountry,
                 decoration: const InputDecoration(
@@ -388,14 +384,5 @@ class _personal_info_screenState extends State<personal_info_screen> {
     );
   }
 
-  Widget _buildTextField(TextEditingController controller, String label) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 16),
-      child: TextFormField(
-        controller: controller,
-        decoration: InputDecoration(labelText: label),
-        style: const TextStyle(fontSize: 16),
-      ),
-    );
-  }
+
 }

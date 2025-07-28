@@ -1,12 +1,8 @@
-// Updated sign up page with email validation, delay user creation, send verification code
-
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'email_verification_code_screen.dart';
-import 'dart:convert';
-import 'package:http/http.dart' as http;
 import 'package:mailer/mailer.dart';
 import 'package:mailer/smtp_server.dart';
 
@@ -26,7 +22,7 @@ class _StepUpState extends State<StepUp> {
   bool isLoading = false;
   String? error;
   Future<void> sendEmail(String  code, String email) async {
-    final smtpServer = gmail('ahmed4uashraf@gmail.com', 'kfft suyc yxsu lhdn'); // App Password, not Gmail password
+    final smtpServer = gmail('ahmed4uashraf@gmail.com', 'kfft suyc yxsu lhdn');
 
     final message = Message()
       ..from = Address('ahmed4uashraf@gmail.com', 'StepOut Team')
@@ -87,11 +83,9 @@ class _StepUpState extends State<StepUp> {
         return;
       }
 
-      // Generate 6-digit code
       final random = Random();
       final code = (100000 + random.nextInt(900000)).toString();
 
-      // Store code, password, timestamp
       await FirebaseFirestore.instance
           .collection('email_verifications')
           .doc(email)
@@ -105,7 +99,6 @@ class _StepUpState extends State<StepUp> {
 
       await sendEmail(code, email);
 
-      // Navigate to verification screen
       Navigator.push(
         context,
         MaterialPageRoute(

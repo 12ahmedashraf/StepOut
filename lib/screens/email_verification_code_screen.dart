@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'personal_info.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:http/http.dart' as http;
-import 'dart:convert';
 
 class VerificationCodePage extends StatefulWidget {
   final String email;
@@ -31,7 +29,6 @@ class _VerificationCodePageState extends State<VerificationCodePage> {
     final enteredCode = codeController.text.trim();
 
     try {
-      // Get the verification data from Firestore
       final doc = await FirebaseFirestore.instance
           .collection('email_verifications')
           .doc(widget.email)

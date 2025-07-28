@@ -8,6 +8,9 @@ environment:
   sdk: ^3.8.1
 
 dependencies:
+  font_awesome_flutter: ^10.5.0
+  timezone: ^0.9.1
+  cached_network_image: ^3.3.0
   firebase_app_check: ^0.2.0+4
   http: ^1.2.1
   intl: ^0.18.1

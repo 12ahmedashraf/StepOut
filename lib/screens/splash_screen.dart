@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:firebase_auth/firebase_auth.dart';
-import 'home_screen.dart';
-import 'step_in.dart';
 import 'dart:async';
 import 'package:step_out/auth/auth_gate.dart';
 
@@ -23,7 +20,6 @@ class _splash_screenState extends State<splash_screen>{
       );
     });
   }
-
   @override
   Widget build(BuildContext context){
     return Scaffold(
