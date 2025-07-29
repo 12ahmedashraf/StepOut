@@ -54,7 +54,7 @@ class _App_BarState extends State<App_Bar> {
               style: TextStyle(color: Color(0xFF000000)),
             ),
             TextSpan(
-              text: 'In',
+              text: 'Out',
               style: TextStyle(color: Color(0xFF10B981)),
             ),
           ],
