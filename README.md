@@ -2,7 +2,7 @@
 
 StepOut from scrolling zone
 
-## Getting Started
+##  Objective
 
 This project is to help teens StepOut from their comfort zone by
 doing daily challenges in a competitive an gaamified environment of teens
