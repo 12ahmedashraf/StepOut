@@ -170,12 +170,12 @@ class _StepUpState extends State<StepUp> {
                 children: [
                   Container(
                     margin: const EdgeInsets.only(bottom: 10, left: 20),
-                    child: Image.asset('assets/images/logo.png', height: 200),
+                    child: Image.asset('assets/images/logo.png', height: 185),
                   ),
                   RichText(
                     text: const TextSpan(
                       style: TextStyle(
-                        fontSize: 50,
+                        fontSize: 40,
                         fontFamily: 'Dosis',
                         fontWeight: FontWeight.w700,
                       ),

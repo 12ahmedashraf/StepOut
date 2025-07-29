@@ -75,7 +75,7 @@ class _step_inState extends State<step_in> {
           child: ConstrainedBox(
             constraints: BoxConstraints(
               maxWidth: 450,
-              minHeight: MediaQuery.of(context).size.height - 32,
+              minHeight: MediaQuery.of(context).size.height - 45,
             ),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
@@ -84,13 +84,13 @@ class _step_inState extends State<step_in> {
                   margin: const EdgeInsets.only(bottom: 10, left: 20),
                   child: Image.asset(
                     'assets/images/logo.png',
-                    height: 200,
+                    height: 185,
                   ),
                 ),
                 RichText(
                   text: TextSpan(
                     style: TextStyle(
-                      fontSize: 50,
+                      fontSize: 40,
                       fontFamily: 'Dosis',
                       fontWeight: FontWeight.w700,
                     ),
@@ -173,7 +173,8 @@ class _step_inState extends State<step_in> {
                   margin: const EdgeInsets.only(top: 0, bottom: 20, left: 0),
                   child: ElevatedButton(
                     onPressed: _isLoading ? null : _signIn,
-                    style: ElevatedButton.styleFrom(
+                    style:
+                    ElevatedButton.styleFrom(
                       backgroundColor: Color(0xFFE9FBF4),
                       padding: EdgeInsets.symmetric(horizontal: 40, vertical: 16),
                       shape: RoundedRectangleBorder(

@@ -167,7 +167,7 @@ class _profile_picture_pageState extends State<profile_picture_page> {
                     : null,
               ),
             ),
-            const SizedBox(height: 150),
+            const SizedBox(height: 100),
             if (error != null)
               Text(error!, style: const TextStyle(color: Colors.red, fontFamily: 'Dosis')),
             isLoading
